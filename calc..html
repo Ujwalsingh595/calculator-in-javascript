@@ -1,0 +1,61 @@
+<html>
+<title>calci
+</title>
+<style>
+*{
+
+border:0;
+padding:0;
+}
+.form-style{
+width:320px;
+height:320px;
+border:2px solid black;
+padding:20px;
+box-shadow:2px 2px 10px 10px black;
+margin:auto;
+
+}
+#t1{
+width:310px;
+border:2px solid green;
+}
+#t2{
+width:310px;
+}
+input{
+width:100px;
+height:30px;
+border:1px;
+}
+</style>
+<body>
+<div class="form-style">
+<form name="forms">
+<h1><center>Calculator</center></h1>
+<input type="text"name="answer"id="t1"><br>
+<input type="button"value="1"onclick="forms.answer.value +='1'">
+<input type="button"value="2"onclick="forms.answer.value +='2'">
+<input type="button"value="3"onclick="forms.answer.value +='3'">
+<br>
+<input type="button"value="4"onclick="forms.answer.value +='4'">
+<input type="button"value="5"onclick="forms.answer.value +='5'">
+<input type="button"value="6"onclick="forms.answer.value +='6'">
+<br>
+<input type="button"value="7"onclick="forms.answer.value +='7'">
+<input type="button"value="8"onclick="forms.answer.value +='8'">
+<input type="button"value="9"onclick="forms.answer.value +='9'">
+<br>
+<input type="button"value="+"onclick="forms.answer.value +='+'">
+<input type="button"value="-"onclick="forms.answer.value +='-'">
+<input type="button"value="*"onclick="forms.answer.value +='*'">
+<br>
+<input type="button"value="/"onclick="forms.answer.value +='/'">
+<input type="button"value="0"onclick="forms.answer.value +='0'">
+<input type="button"value="="onclick="forms.answer.value=eval(forms.answer.value)">
+<br><br>
+<input type="button"value="clear all"id="t2"onclick="forms.answer.value =+' '">
+</form>
+</body>
+</div>
+</html>
